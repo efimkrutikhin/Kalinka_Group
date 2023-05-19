@@ -110,8 +110,8 @@ html{
 
 @media (min-width:1200px) and (max-width:1920px){
   .rectangle_one {
-      width: 59.3%;
-      min-height:32.8%;
+      min-width: 59.3%; /* 1140*100/1920 */
+      min-height:32.8%; /* 355*100/1080 */
       position: absolute;
       padding: 23px;
       left: 4.2%;
@@ -129,8 +129,8 @@ html{
     }
 
     .rectangle_one_content img{
-      width: 26.8%;
-      height:87%;
+      width: 26.8%; /* 306*100/1140 */
+      height:87%; /* 309*100/355 */
     }
     
     .header-container {
@@ -171,7 +171,7 @@ html{
     
     .rectangle_one_text p{
       position: relative;
-      width: 65.7%;
+      width: 74.9rem;
       font-family: 'News Cycle';
       font-style: normal;
       font-weight: 400;
@@ -179,81 +179,6 @@ html{
       line-height: 2.2rem;
       color: #000000;
     }
-}
-
-
-/* @media(max-width:1200px){
-  .rectangle_one {
-    position: absolute;
-    width: 50%;
-    min-height: 429px;
-    left: 25%;
-    top: 91px;
-    padding: 0;
-    
-    background: #C3A7F1;
-    border-radius: 45px;
-  }
-  .rectangle_one_content{
-    display: flex;
-    flex-direction: column;
-    padding: 23px;
-  }
-  .header-container {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  h2 {
-    position: relative;
-    left: 50px;
-    top: 5px;
-    font-family: 'News Cycle';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 25px;
-    line-height: 82px;
-    display: flex;
-    justify-self: center;
-    align-items: center;
-    text-align: center;
-    color: #000000;
-  }
-  
-  h1 {
-    position: relative;
-    width: 273px;
-    height: 33px;
-    font-family: 'News Cycle';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 35px;
-    line-height: 115px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #000000;
-  }
-  
-  ._rectangle_one_text p {
-    position: relative;
-    width: 280px;
-    min-height:20px;
-    font-family: 'News Cycle';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 30px;
-    color: #000000;
-    text-align: justify;
-    margin:0 auto;
-
-    hyphens:auto;
-    -webkit-hyphens:auto;
-    -moz-hyphens:auto;
-    -ms-hyphens:auto;
-}
 }
   
   /* Медиазапрос для мобильных устройств */
