@@ -36,8 +36,12 @@ img{vertical-align:top;}
 
 h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
 
+html{
+  font-size: 10px;
+}
+
 /* One_rectangle */
-@media (max-width:3840px){
+/* @media (max-width:3840px){
   .rectangle_one {
     width: 1140px;
     min-height:355px;
@@ -48,7 +52,7 @@ h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
     background: #C3A7F1;
     border-radius: 45px;
   }
-  .content_1 {
+  .rectangle_one_content {
     display: flex;
     justify-content: space-between;
   }
@@ -91,7 +95,7 @@ h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
     color: #000000;
   }
   
-  .text_1 p {
+  .rectangle_one_text p {
     position: relative;
     width: 749px;
     font-family: 'News Cycle';
@@ -101,77 +105,84 @@ h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
     line-height: 22px;
     color: #000000;
   }
-}
+} */
 
 
-@media (max-width:1920px){
+@media (min-width:1200px) and (max-width:1920px){
   .rectangle_one {
-      width: 1140px;
-      min-height:355px;
+      width: 59.3%;
+      min-height:32.8%;
       position: absolute;
       padding: 23px;
-      left: 81px;
-      top: 23px;
+      left: 4.2%;
+      top: 2.1%;
       background: #C3A7F1;
       border-radius: 45px;
-    }
-    .content_1 {
+      -webkit-border-radius: 45px;
+      -moz-border-radius: 45px;
+      -ms-border-radius: 45px;
+      -o-border-radius: 45px;
+}
+    .rectangle_one_content {
       display: flex;
       justify-content: space-between;
+    }
+
+    .rectangle_one_content img{
+      width: 26.8%;
+      height:87%;
     }
     
     .header-container {
       display: flex;
-      margin: 10px 0 30px 0;
-      align-items: center;
+      margin: 10px 0 30px 0;    
     }
     
-    h2 {
+    .rectangle_one_text h1 {
       position: relative;
-      width: 159px;
-      height: 33px;
-      left: 50px;
-      top: 5px;
+      width: 27.3rem;
+      height: 3.3rem;
       font-family: 'News Cycle';
       font-style: normal;
       font-weight: 400;
-      font-size: 50px;
-      line-height: 82px;
+      font-size: 7rem;
+      line-height: 11.5rem;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #000000;
+    }
+   .rectangle_one_text h2 {
+      position: relative;
+      width: 15.9rem;
+      height: 3.3rem;
+      left: 5rem;
+      top: 0.5rem;
+      font-family: 'News Cycle';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 5rem;
+      line-height: 8.2rem;
       display: flex;
       align-items: center;
       text-align: center;
       color: #000000;
     }
     
-    h1 {
+    .rectangle_one_text p{
       position: relative;
-      width: 273px;
-      height: 33px;
+      width: 65.7%;
       font-family: 'News Cycle';
       font-style: normal;
       font-weight: 400;
-      font-size: 70px;
-      line-height: 115px;
-      display: flex;
-      align-items: center;
-      text-align: center;
-      color: #000000;
-    }
-    
-    .text_1 p {
-      position: relative;
-      width: 749px;
-      font-family: 'News Cycle';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 22px;
-      line-height: 22px;
+      font-size: 2.2rem;
+      line-height: 2.2rem;
       color: #000000;
     }
 }
 
 
-@media(max-width:1200px){
+/* @media(max-width:1200px){
   .rectangle_one {
     position: absolute;
     width: 50%;
@@ -183,7 +194,7 @@ h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
     background: #C3A7F1;
     border-radius: 45px;
   }
-  .content_1{
+  .rectangle_one_content{
     display: flex;
     flex-direction: column;
     padding: 23px;
@@ -225,7 +236,7 @@ h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
     color: #000000;
   }
   
-  .text_1 p {
+  ._rectangle_one_text p {
     position: relative;
     width: 280px;
     min-height:20px;
@@ -246,82 +257,83 @@ h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
 }
   
   /* Медиазапрос для мобильных устройств */
-  @media (max-width: 800px) {
+  @media (min-width:350px) and (max-width: 800px) {
     .rectangle_one {
       position: absolute;
-      width: 305px;
-      min-height: 429px;
-      top: 91px;
+      width: 77%; /*Ширина и высота с учетом заданных отступов*/
+      min-height: 49.8%;
+      top: 9.1rem; /*91px */
+      left:4.4rem; /*44px*/
+      right:4.4rem; 
       padding: 0;
       margin: 0 auto;
       
       background: #C3A7F1;
       border-radius: 45px;
     }
-    .content_1{
-      display: flex;
-      flex-direction: column;
-      padding: 23px;
-    }
+   .rectangle_one_content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 5.9%; /*18 px в процентах*/
+  }
+
+  .rectangle_one_content img{
+    width:auto;
+    height:auto;
+  }
     .header-container {
       display: flex;
       flex-direction: column;
     }
-    
-    h2 {
-      position: relative;
-      left: 50px;
-      top: 5px;
-      font-family: 'News Cycle';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 25px;
-      line-height: 82px;
-      display: flex;
-      justify-self: center;
-      align-items: center;
-      text-align: center;
-      color: #000000;
-    }
-    
+
     h1 {
       position: relative;
-      width: 273px;
-      height: 33px;
       font-family: 'News Cycle';
       font-style: normal;
       font-weight: 800;
-      font-size: 35px;
-      line-height: 115px;
+      font-size: 3.6rem; /*Относительно начального index{font-size=10px} */
+      line-height: 5.92rem;
       display: flex;
-      align-items: center;
       justify-content: center;
-      text-align: center;
       color: #000000;
     }
-    
-    .text_1 p {
+    h2 {
       position: relative;
-      width: 280px;
-      min-height:20px;
       font-family: 'News Cycle';
       font-style: normal;
       font-weight: 400;
-      font-size: 22px;
-      line-height: 22px;
+      font-size: 2.7rem;
+      line-height: 4.4rem;
+      display: flex;
+      justify-content: center;
+      
       color: #000000;
-      hyphens: auto;
-      -webkit-hyphens: auto;
-      -moz-hyphens: auto;
-      -ms-hyphens: auto;
+    }
+    .rectangle_one_text{
+      position: relative;
+      width:100%;
+    }
+
+    .rectangle_one_text p {
+      position: relative;
+      width: 92%; /*Ширина задана относительно ширины блока и отступов по бокам*/
+      font-family: 'News Cycle';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 2.2rem;
+      line-height: 2.2rem;
+      color: #000000;
+      text-align:center;
+      margin: 0 auto;
 }
   }
-  
+
 
 
                                 /* Two_rectangle */
 
-@media(max-width:3840px){
+/* @media(max-width:3840px){
   .rectangle_two {
     width: 1140px;
     min-height:355px;
@@ -331,9 +343,9 @@ h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
     right:23px;
     background: #C3A7F1;
     border-radius: 45px;
-  } 
+  }  */
 
-  .content_two {
+  /* .content_two {
     display: flex;
     justify-content: space-between;
   }
@@ -342,26 +354,11 @@ h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
     display: flex;
     margin: 10px 0 30px 0;
     align-items: center;
-  }
+  } */
   
-  .h2_two  {
-    position: relative;
-    width: 159px;
-    height: 33px;
-    left: 50px;
-    top: 5px;
-    font-family: 'News Cycle';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 50px;
-    line-height: 82px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #000000;
-  }
+
   
-  .h1_two {
+  /* .h1_two {
     position: relative;
     width: 273px;
     height: 33px;
@@ -388,9 +385,9 @@ h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
     color: #000000;
   }
 
-}
+} */
 
-@media(max-width:1920px){
+/* @media(max-width:1920px){
 
   .rectangle_two {
       width: 1140px;
@@ -536,7 +533,7 @@ h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
     -moz-hyphens:auto;
     -ms-hyphens:auto;
 }
-} 
+}  */
                                   
 /* Медиазапрос для мобильных устройств */
 /* @media (max-width: 800px) {
