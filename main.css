@@ -110,6 +110,7 @@ html{
 /* АДАПТИВ ПЕРВОГО БЛОКА ДЛЯ РАЗРЕШЕНИЙ 1920*1200*800*350 */
 @media (min-width:1200px) and (max-width:1920px){
   .rectangle_one {
+      display: block;
       min-width: 59.3%; /* 1140*100/1920 */
       min-height:32.8%; /* 355*100/1080 */
       position: absolute;
@@ -183,6 +184,7 @@ html{
 
 @media(min-width: 800px) and (max-width:1200px){
   .rectangle_one {
+    display: block;
     position: absolute;
     width: 77%; /*Ширина и высота с учетом заданных отступов*/
     min-height: 49.8%;
@@ -256,6 +258,7 @@ html{
   /* Медиазапрос для мобильных устройств */
   @media (min-width:350px) and (max-width: 800px) {
     .rectangle_one {
+      display: block;
       position: absolute;
       width: 77%; /*Ширина и высота с учетом заданных отступов*/
       min-height: 49.8%;
@@ -279,7 +282,7 @@ html{
     width:auto;
     height:auto;
   }
-    .header-container {
+    .rectangle_one_header {
       display: flex;
       flex-direction: column;
     }
@@ -333,26 +336,15 @@ html{
 
 /* АДАПТИВ ВТОРОГО БЛОКА ДЛЯ РАЗРЕШЕНИЙ 1920*1200*800*350 */
 
-/* @media(max-width:3840px){
-  .rectangle_two {
-    width: 1140px;
-    min-height:355px;
-    position: absolute;
-    padding: 23px;
-    top:448px;
-    right:23px;
-    background: #C3A7F1;
-    border-radius: 45px;
-  }  */
-
   @media (min-width:1200px) and (max-width:1920px){
     .rectangle_two {
+        display: block;
         min-width: 59.3%; /* 1140*100/1920 */
         min-height:32.8%; /* 355*100/1080 */
         position: absolute;
         padding: 23px;
         right: 2.5%;
-        top: 50%;
+        top: 41.4%;
         background: #C3A7F1;
         border-radius: 45px;
         -webkit-border-radius: 45px;
@@ -420,14 +412,15 @@ html{
   }
   
   @media(min-width: 800px) and (max-width:1199px){
-
     .rectangle_two {
+      display: block;
       position: absolute;
       width: 77%;
-      /*Ширинаивысотасучетомзаданныхотступов*/min-height: 49.8%;
-      top: 9.1rem;
+      /*Ширинаивысотасучетомзаданныхотступов*/
+      min-height: 49.8%;
       /*91px*/left:4.4rem;
       /*44px*/right:4.4rem;
+      top: 9.1rem;
       padding: 0;
       margin: 0 auto;
       background: #C3A7F1;
@@ -495,77 +488,78 @@ html{
   }
   }
 
-  @media (min-width:350px) and (max-width: 800px) {
-      .rectangle_two {
-        position: absolute;
-        width: 77%; /*Ширина и высота с учетом заданных отступов*/
-        min-height: 49.8%;
-        top: 9.1rem; /*91px */
-        left:4.4rem; /*44px*/
-        right:4.4rem; 
-        padding: 0;
-        margin: 0 auto;
-        
-        background: #C3A7F1;
-        border-radius: 45px;
-      }
-     .rectangle_two_content{
-      position: relative;
+  @media (min-width:350px) and (max-width:800px){
+    .rectangle_two {
+      display: block;
+      position: absolute;
+      width: 77%; /*Ширина и высота с учетом заданных отступов*/
+      min-height: 49.8%;
+      top: 9.1rem; /*91px */
+      left:4.4rem; /*44px*/
+      right:4.4rem; 
+      padding: 0;
+      margin: 0 auto;
+      
+      background: #C3A7F1;
+      border-radius: 45px;
+    }
+   .rectangle_two_content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 5.9%; /*18 px в процентах*/
+  }
+
+  .rectangle_two_content img{
+    width:auto;
+    height:auto;
+  }
+    .rectangle_two_header {
       display: flex;
       flex-direction: column;
-      padding: 5.9%; /*18 px в процентах*/
     }
-  
-    .rectangle_two_content img{
-      width:auto;
-      height:auto;
+
+    .h1_two {
+      position: relative;
+      font-family: 'News Cycle';
+      font-style: normal;
+      font-weight: 800;
+      font-size: 3.6rem; /*Относительно начального index{font-size=10px} */
+      line-height: 5.92rem;
+      display: flex;
+      justify-content: center;
+      color: #000000;
     }
-      .rectangle_two_header {
-        display: flex;
-        flex-direction: column;
-      }
-  
-      .h1_two {
-        position: relative;
-        font-family: 'News Cycle';
-        font-style: normal;
-        font-weight: 800;
-        font-size: 3.6rem; /*Относительно начального index{font-size=10px} */
-        line-height: 5.92rem;
-        display: flex;
-        justify-content: center;
-        color: #000000;
-      }
-      .h2_two {
-        position: relative;
-        font-family: 'News Cycle';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 2.7rem;
-        line-height: 4.4rem;
-        display: flex;
-        justify-content: center;
-        
-        color: #000000;
-      }
-      .rectangle_two_text{
-        position: relative;
-        width:100%;
-      }
-  
-      .rectangle_two_text p {
-        position: relative;
-        width: 92%; /*Ширина задана относительно ширины блока и отступов по бокам*/
-        font-family: 'News Cycle';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 2.2rem;
-        line-height: 2.2rem;
-        color: #000000;
-        text-align:center;
-        margin: 0 auto;
+    .h2_two {
+      position: relative;
+      font-family: 'News Cycle';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 2.7rem;
+      line-height: 4.4rem;
+      display: flex;
+      justify-content: center;
+      
+      color: #000000;
+    }
+    .rectangle_two_text{
+      position: relative;
+      width:100%;
+    }
+
+    .rectangle_two_text p {
+      position: relative;
+      width: 92%; /*Ширина задана относительно ширины блока и отступов по бокам*/
+      font-family: 'News Cycle';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 2.2rem;
+      line-height: 2.2rem;
+      color: #000000;
+      text-align:center;
+      margin: 0 auto;
+}
   }
-    }
-  
+
                                   
                               
